@@ -39,6 +39,7 @@ __all__ = [
     "A6",
     "AAAA",
     "AFSDB",
+    "APL",
     "CNAME",
     "DNAME",
     "HINFO",
@@ -85,6 +86,7 @@ __all__ = [
     "Record_A6",
     "Record_AAAA",
     "Record_AFSDB",
+    "Record_APL",
     "Record_CNAME",
     "Record_DNAME",
     "Record_HINFO",
@@ -202,7 +204,8 @@ PORT = 53
     TXT,
     RP,
     AFSDB,
-) = range(1, 19)
+    APL,
+) = range(1, 20)
 AAAA = 28
 SRV = 33
 NAPTR = 35
@@ -236,7 +239,8 @@ QUERY_TYPES = {
     TXT: "TXT",
     RP: "RP",
     AFSDB: "AFSDB",
-    # 19 through 27?  Eh, I'll get to 'em.
+    APL: "APL", 
+    # 20 through 27 missing. (from original code)
     AAAA: "AAAA",
     SRV: "SRV",
     NAPTR: "NAPTR",
